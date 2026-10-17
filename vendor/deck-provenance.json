@@ -1,0 +1,32 @@
+[
+  {
+    "file": "src/relocate.cpp",
+    "sha256": "4f63b6a66ce92e20d77c09de65057bff8ac4e7e2ea47b3227189baca61711780",
+    "source": "GronedWaffel etaHEN local supported-firmware tree; original HDE64 by Vyacheslav Patkov",
+    "adaptation": "Flatten local include paths; decode-only build"
+  },
+  {
+    "file": "include/relocate.h",
+    "sha256": "32f228e74a93b9a97923fcc4b5c21ac5b08995ee7276fd8709361aed24e65eb3",
+    "source": "GronedWaffel etaHEN local supported-firmware tree; original HDE64 by Vyacheslav Patkov",
+    "adaptation": "Flatten local include paths; decode-only build"
+  },
+  {
+    "file": "src/hde64.cpp",
+    "sha256": "b436ec237b95bbb6c2bd5528ad46b5251fc5515fae2a5b2fd8a45c2330f44be9",
+    "source": "GronedWaffel etaHEN local supported-firmware tree; original HDE64 by Vyacheslav Patkov",
+    "adaptation": "Flatten local include paths; decode-only build"
+  },
+  {
+    "file": "include/hde64.h",
+    "sha256": "b8148b3eb2232628b7352491bb3232ff88b393201940d605dd0d92799e967cc3",
+    "source": "GronedWaffel etaHEN local supported-firmware tree; original HDE64 by Vyacheslav Patkov",
+    "adaptation": "Flatten local include paths; decode-only build"
+  },
+  {
+    "file": "include/table64.h",
+    "sha256": "b774446d2f110ce954fb0a710f4693c5562ddbd8d56fe84106f2ee80db8b50a2",
+    "source": "GronedWaffel etaHEN local supported-firmware tree; original HDE64 by Vyacheslav Patkov",
+    "adaptation": "Flatten local include paths; decode-only build"
+  }
+]

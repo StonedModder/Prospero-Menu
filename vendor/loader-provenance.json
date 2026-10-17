@@ -1,0 +1,56 @@
+{
+  "source": "GronedWaffel etaHEN port; libelfldr/libNineS by John Törnblom",
+  "license": "GPL-3.0-or-later",
+  "files": [
+    {
+      "name": "elfldr.c",
+      "from": "Source Code/libelfldr/src/elfldr.c",
+      "upstreamSha256": "c6221166e44f8e0afd07e946ac381f0c518fccda4f59e2db236c35136285e815"
+    },
+    {
+      "name": "elfldr.h",
+      "from": "Source Code/libelfldr/include/elfldr.h",
+      "upstreamSha256": "6f6ee3dab41e610a1fbe1bb9ec6a73783057502a25057f369c792b6c9cc1da49"
+    },
+    {
+      "name": "pt.c",
+      "from": "Source Code/libNineS/src/pt.c",
+      "upstreamSha256": "cbbb11d767ed3fefde833371db3a1d0fbd3f3a9346f4c8f17f1c86f78b65b0a2"
+    },
+    {
+      "name": "pt.h",
+      "from": "Source Code/libNineS/include/pt.h",
+      "upstreamSha256": "ab1dadce78d99ebed2ff4b91428c5d42c8355ff20774332158cf5c45645512f7"
+    },
+    {
+      "name": "log.h",
+      "from": "Source Code/libelfldr/include/log.h",
+      "upstreamSha256": "b0400e40589a80b73f1a6f1229650c2d2daf6ae303ae5331a7402f210f838724"
+    },
+    {
+      "name": "port_timing.h",
+      "from": "Source Code/include/port_timing.h",
+      "upstreamSha256": "0ff7c038c4d72c37ea199eec8150d6cba086de705465c577f6a15184ec6754f3"
+    },
+    {
+      "name": "port_diagnostic.h",
+      "from": "Source Code/include/port_diagnostic.h",
+      "upstreamSha256": "1ad945d7a4ed40c71e31db41ddae2facb0cb3b869e5f8e6c7a167aff2a8fb326"
+    },
+    {
+      "name": "syscall-shim.S",
+      "from": "port/syscall-shim.S",
+      "upstreamSha256": "8d4b20e406d783e7d756a218dd2883d9c85c0067e59e80a62e8620c9e5183277"
+    },
+    {
+      "name": "sha256.c",
+      "from": "../experimental/diagnostics/sha256.c",
+      "upstreamSha256": "9be01db139f50c83af72483cfb5158ce2440308c293816cea635c5a4dc96a074"
+    },
+    {
+      "name": "sha256.h",
+      "from": "../experimental/diagnostics/sha256.h",
+      "upstreamSha256": "ff48cfb9a806ea22fd19d29a5aff8d9309bd436011948c7dc609c286e852cd7a"
+    }
+  ]
+}

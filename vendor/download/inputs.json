@@ -1,0 +1,30 @@
+{
+  "description": "Pinned PS5 static libraries used by the beta. Exact inputs, upstream source archives, licenses and PS5 package recipes accompany the GitHub release; see BUILDING.md.",
+  "inputs": [
+    {
+      "file": "libcurl.a",
+      "bytes": 1571308,
+      "sha256": "5ca7ba7fe515e04254258c8ca53111d0278c2dfeec994f269da8ef31563694b3"
+    },
+    {
+      "file": "libwolfssl.a",
+      "bytes": 2196940,
+      "sha256": "9178603a98188c462d2e3bb93502bdce72fe3858b49cf9ed6f591a4b1dbd374f"
+    },
+    {
+      "file": "libz.a",
+      "bytes": 154572,
+      "sha256": "05d46bf6d615dbd6c48171c43f17af58a456051e8dbecf340630daa102e022f1"
+    },
+    {
+      "file": "libzstd.a",
+      "bytes": 1233518,
+      "sha256": "d84ca33e966555f8c35940c097c491773b58a69af8438966e98ecff1cd11435c"
+    },
+    {
+      "file": "libpsl.a",
+      "bytes": 115062,
+      "sha256": "aa08565624117abe10f8ed3a23000f793323c9f30f0b1c23d1df86d71a178911"
+    }
+  ]
+}

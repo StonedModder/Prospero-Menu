@@ -1,0 +1,19 @@
+{
+  "sourceTree": "GronedWaffel etaHEN local supported-firmware source",
+  "sourceCommit": "89123ffbc9d14a4515c74800b00124595de60348",
+  "authors": ["OnionHEN / LightningMods", "PHU Games Tools / ArkSama"],
+  "files": [
+    { "file": "Source Code/fps_native/source/fps_agc.cpp", "sha256": "df9a1d38eff69d5abf16411d5b81587299ebad8be7954c3ccae2746011e1cd7f" },
+    { "file": "Source Code/fps_native/source/fps_dce.cpp", "sha256": "cc160bdaad336fc6b64543d187a3a2819c134b91190f60c7eac2d66fae9a934c" },
+    { "file": "Source Code/fps_native/source/fps_formula.cpp", "sha256": "af70bb07e1cc8c85c4a47b8f84cdf2a935d488fd7fb00dfe2bfe864f344ad634" },
+    { "file": "Source Code/shellui/include/fps_counter_stub.h", "sha256": "458e808559b82fcfdd637dbeee781f9a86ba91ea63b02155994bb34d67c9607e" },
+    { "file": "Source Code/daemon/source/bc-fps-counter.cpp", "sha256": "a1478430a269b47a3158883be3f9eb3bc8f0dd3023eb10954b121ab9383086ed" }
+  ],
+  "adaptation": "AGC ring and driver counter layout, DCE ioctl query, rolling/multipass interpretation and PS4 GNM entry-counter strategy. ProsperoMenu adds generation-bound guarded worker reads, per-page translation, explicit display-rate fallback, optional shared sampling and independent menu/metric sequences. The PS4 path adds a split RX/RW arena, enabled/cookie control block, stopped publication with rollback, and durable installation receipts. No cached physical mappings, old HEN marker files or sampling daemon are carried over.",
+  "sdk": {
+    "source": "https://github.com/ps5-payload-dev/sdk/blob/v0.43/crt/kernel_procio.c",
+    "authors": ["John Törnblom", "idlesauce", "sleirsgoevy"],
+    "use": "Linked kernel_proc_getpaddr page translation; ProsperoMenu performs its own bounded physical reads. The generic process-copy fallback is not used by telemetry."
+  },
+  "hardwareVerified": false
+}

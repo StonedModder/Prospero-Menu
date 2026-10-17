@@ -1,0 +1,65 @@
+{
+  "format": "prosperomenu-cheat-format-provenance-v1",
+  "envelope": {
+    "source": "https://raw.githubusercontent.com/etaHEN/etaHEN/dafa13b562ddb137a4b4a97b9aaa287c0c57cc9c/Source%20Code/util/source/mc4decrypter/mc4decrypter.c",
+    "sha256": "517f312cef9255f40eed6fb8d1c6bbfbcbe8daab4935c2aadbf49053a8c1e9ae",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+      "etaHEN",
+      "LightningMods"
+    ]
+  },
+  "samples": [
+    {
+      "source": "https://raw.githubusercontent.com/GoldHEN/GoldHEN_Cheat_Repository/acc22fefac0f0ea35a0f59b3f9526707122098dd/mc4/CUSA00002_01.00.mc4",
+      "file": "CUSA00002_01.00.mc4",
+      "sha256": "875a90e9f4d50ef8044315d6f25101cd4a2feb8e8f6e822f30d2f7348f5dcfc4",
+      "bytes": 1881
+    },
+    {
+      "source": "https://raw.githubusercontent.com/GoldHEN/GoldHEN_Cheat_Repository/acc22fefac0f0ea35a0f59b3f9526707122098dd/mc4/CUSA00002_01.81.mc4",
+      "file": "CUSA00002_01.81.mc4",
+      "sha256": "ae10d76087faaa09b3727e10cd7ec261a79365aae803571f9d854b0975bffc7f",
+      "bytes": 4312
+    },
+    {
+      "source": "https://raw.githubusercontent.com/GoldHEN/GoldHEN_Cheat_Repository/acc22fefac0f0ea35a0f59b3f9526707122098dd/mc4/CUSA00018_01.20_default.elf.mc4",
+      "file": "CUSA00018_01.20_default.elf.mc4",
+      "sha256": "72a90f25d52a0ee534adb07a968f7c88cfb9da77038af4fcad12603f6a078347",
+      "bytes": 1580
+    }
+  ],
+  "aes": {
+    "package": "@noble/ciphers",
+    "version": "2.4.0",
+    "license": "MIT",
+    "source": "https://github.com/paulmillr/noble-ciphers/tree/d9e8a6a599e7ed729d9be03854c46a3c73bd9a79",
+    "integrity": "sha512-AnjFn0Jv92laAkvMrghlFZq4qQCIN/4DxFV/eooqtC2YTjB7kBeLMS2T9KJX4Dn+ZVXLOwK0lSgqDtx9gvxtiw=="
+  },
+  "scope": "Format decoding only. Public game patches are not redistributed; original synthetic fixtures cover parsing. No console execution or gameplay validation.",
+  "addressing": {
+    "semanticsSource": "https://github.com/etaHEN/etaHEN/blob/dafa13b562ddb137a4b4a97b9aaa287c0c57cc9c/Source%20Code/util/source/CheatManager.cpp",
+    "sha256": "59778f3042a6170be33f869ab3620e9fff318d7b8821ad22fd12da50777f2d65",
+    "scope": "Explicit Absolute uses the supplied user virtual address; otherwise module base plus offset. No guessed ASLR correction or code-cave relocation. Original ProsperoMenu transactional implementation.",
+    "samples": [
+      {
+        "file": "CUSA00856_01.04.shn",
+        "source": "https://raw.githubusercontent.com/GoldHEN/GoldHEN_Cheat_Repository/acc22fefac0f0ea35a0f59b3f9526707122098dd/shn/CUSA00856_01.04.shn",
+        "sha256": "586dc3df95080ea39ca8a5b3351a2a30803282adef71539afc5721eb316d1d82",
+        "bytes": 2020
+      },
+      {
+        "file": "CUSA01022_01.03.shn",
+        "source": "https://raw.githubusercontent.com/GoldHEN/GoldHEN_Cheat_Repository/acc22fefac0f0ea35a0f59b3f9526707122098dd/shn/CUSA01022_01.03.shn",
+        "sha256": "62124244ae45a5860becbc51cd5e5a0eccb93a87455c622540b689d8782b4e10",
+        "bytes": 1694
+      },
+      {
+        "file": "CUSA01130_01.00.shn",
+        "source": "https://raw.githubusercontent.com/GoldHEN/GoldHEN_Cheat_Repository/acc22fefac0f0ea35a0f59b3f9526707122098dd/shn/CUSA01130_01.00.shn",
+        "sha256": "34de8f8261f01f510aa36f41d3254472389c89f3cec9aa53d264b5e4264e5d65",
+        "bytes": 1480
+      }
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "console-tools",
+  "name": "Console Tools",
+  "version": "1.0.1",
+  "author": "ProsperoMenu",
+  "api": 1,
+  "kind": "elf",
+  "elf": "console-tools.ovl",
+  "order": 50,
+  "description": "Firmware, network address, uptime, temperatures and free space on every drive.",
+  "libs": [
+    "SceNetCtl"
+  ]
+}

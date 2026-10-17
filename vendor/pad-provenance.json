@@ -1,0 +1,13 @@
+{
+  "source": "https://github.com/blackbearreloaded/ps5-native-gamepad-input-research",
+  "revision": "10667715140895b313d88613e416d9495e7e5387",
+  "credit": "blackbearreloaded — independently authored normal-pad interoperability research",
+  "license": "GPL-3.0",
+  "files": [
+    { "path": "include/ps5_pad.hpp", "sha256": "5231df22242db50b6c06383602b1cb7b9471711001247d43820f4f9212211574" },
+    { "path": "STATIC-EVIDENCE.md", "sha256": "e1353a6d2dbc91f5750f44c129dce59346613db07829d16dc915208ff46795fb" }
+  ],
+  "use": "Reference for normal 120-byte read layout, standard button bit values, connected/intercepted handling, 64-record capacity and centered stick bytes. No proprietary binaries are included. ProsperoMenu's post-read entry, capture lease, event queue, relay and controller ownership logic are original implementations.",
+  "hardwareVerified": false,
+  "scope": "Normal scePadRead/scePadReadState only; extended/device-specific read APIs require separate adapters. Static declarations and host execution do not establish compatibility on the supported console firmware."
+}

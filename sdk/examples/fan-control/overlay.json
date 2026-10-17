@@ -1,0 +1,13 @@
+{
+  "id": "fan-control",
+  "name": "Fan Control",
+  "version": "1.0.1",
+  "author": "ProsperoMenu",
+  "api": 1,
+  "kind": "elf",
+  "elf": "fan-control.ovl",
+  "order": 30,
+  "keepAlive": true,
+  "autostart": true,
+  "description": "CPU and SoC temperatures, and a fan threshold held across game launches and restarts."
+}

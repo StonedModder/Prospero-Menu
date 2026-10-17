@@ -1,0 +1,58 @@
+[
+  {
+    "name": "ps5-payload-sdk",
+    "url": "https://codeload.github.com/ps5-payload-dev/sdk/zip/refs/tags/v0.43",
+    "file": "ps5-payload-sdk.zip",
+    "bytes": 5216586,
+    "sha256": "e39398a8b5ec8d9ce0c56f12914f82405513e04d73f6d0cf9e0dd460490e314d"
+  },
+  {
+    "name": "curl-8.10.1",
+    "url": "https://codeload.github.com/curl/curl/zip/refs/tags/curl-8_10_1",
+    "file": "curl-8.10.1.zip",
+    "bytes": 5928074,
+    "sha256": "5216ed22ac04954d95d39bd5d796b31ca55b482d998a830e7493452a4c6ce7e9"
+  },
+  {
+    "name": "wolfssl-5.7.2",
+    "url": "https://codeload.github.com/wolfSSL/wolfssl/zip/refs/tags/v5.7.2-stable",
+    "file": "wolfssl-5.7.2.zip",
+    "bytes": 25255881,
+    "sha256": "a766dac386ed8e54c33cd66608e1b131e9ff4012c8896cf35c99709bf6604397"
+  },
+  {
+    "name": "zlib-1.3.1",
+    "url": "https://codeload.github.com/madler/zlib/zip/refs/tags/v1.3.1",
+    "file": "zlib-1.3.1.zip",
+    "bytes": 1707811,
+    "sha256": "50b24b47bf19e1f35d2a21ff36d2a366638cdf958219a66f30ce0861201760e6"
+  },
+  {
+    "name": "zstd-1.5.6",
+    "url": "https://codeload.github.com/facebook/zstd/zip/refs/tags/v1.5.6",
+    "file": "zstd-1.5.6.zip",
+    "bytes": 2727058,
+    "sha256": "3b1c3b46e416d36931efd34663122d7f51b550c87f74de2d38249516fe7d8be5"
+  },
+  {
+    "name": "libpsl-0.21.5",
+    "url": "https://codeload.github.com/rockdaboot/libpsl/zip/refs/tags/0.21.5",
+    "file": "libpsl-0.21.5.zip",
+    "bytes": 7448957,
+    "sha256": "3dfc81ffb693172f39bf25d94299c85de4cac54991966f9a4ddc14a155af4233"
+  },
+  {
+    "name": "sqlite-3.46.1",
+    "url": "https://sqlite.org/2024/sqlite-amalgamation-3460100.zip",
+    "file": "sqlite-3.46.1.zip",
+    "bytes": 2764032,
+    "sha256": "77823cb110929c2bcb0f5d48e4833b5c59a8a6e40cdea3936b99e199dbbe5784"
+  },
+  {
+    "name": "pacbrew-build-recipes",
+    "url": "https://codeload.github.com/ps5-payload-dev/pacbrew-repo/zip/2e8bfaaa878392ae673c1fa07837cad1e9f8584b",
+    "file": "pacbrew-build-recipes.zip",
+    "bytes": 396317,
+    "sha256": "9bd018a7b721c6fd9731b44486ad9466d99e2a06630b70c703a8499ebcc3a6c4"
+  }
+]

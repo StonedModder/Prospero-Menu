@@ -1,0 +1,10 @@
+[
+  {
+    "id": "bootanim",
+    "version": "1.0",
+    "file": "prospero-bootanim.elf",
+    "sha256": "ceb0cbac5754e08a48b1a7be8f32256ed6392303bcef617394477b824b765fda",
+    "source": "vendor/bootanim (prospero-bootanim, ShellUI MP4 playback launcher)",
+    "bytes": 1078704
+  }
+]

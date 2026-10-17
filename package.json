@@ -1,0 +1,27 @@
+{
+  "name": "prosperomenu",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "license": "GPL-3.0-or-later",
+  "engines": {
+    "node": ">=24"
+  },
+  "dependencies": {
+    "@noble/ciphers": "2.4.0",
+    "@noble/hashes": "1.8.0",
+    "abort-controller": "3.0.0",
+    "buffer": "6.0.3",
+    "events": "3.3.0",
+    "path-browserify": "1.0.1",
+    "readable-stream": "4.7.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.10"
+  },
+  "scripts": {
+    "dev": "node src/node-main.mjs",
+    "build": "node scripts/build.mjs",
+    "build:overlays": "node scripts/prosperomenu/build-overlays.mjs"
+  }
+}

@@ -1,0 +1,1724 @@
+{
+  "channel": "compatibility-preview",
+  "coordinateSystem": "SDK kernel DATA base; kstuff fields below 3.00 normalized by -0x1010000",
+  "anchorEvidence": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/r0gdb.c#L1719-L1728",
+  "validation": {
+    "total": 67,
+    "existingProfilesUnchanged": 14,
+    "additionalCandidates": 53,
+    "matchesPinnedSdkV043": true,
+    "matchesBundledKstuff111RelevantOffsets": true
+  },
+  "limitations": [
+    "Offsets cover ProsperoMenu profile fields, not full feature compatibility.",
+    "Pre-3.00 tables require documented anchor conversion.",
+    "Relapse availability is not a prerequisite for post-jailbreak ProsperoMenu profile evidence.",
+    "No PS5 14.00+ profile was found in the reviewed primary repositories.",
+    "ShellUI API, package/save ABI, game modules and component behavior still require hardware checks."
+  ],
+  "firmwares": [
+    {
+      "firmware": "1.00",
+      "code": "0x1000000",
+      "updateBit": 14,
+      "status": "compatibility-untested",
+      "offsets": {
+        "allproc": 40705016,
+        "sysentvec": 12690888,
+        "sysentvecPs4": 12691232,
+        "cryptSingletonArray": 46521872,
+        "sysents": 1484720,
+        "sysentsPs4": 1451440,
+        "security": 103026804,
+        "rootvnode": 106321216,
+        "textDelta": 28573696,
+        "pagerTable": 12745792
+      },
+      "kstuffAnchorAdjustment": -16842752,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/1_00.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "9f82d357e2d45ac065330d514be1d167a30616a96bbb7be830c965b05648fea1"
+    },
+    {
+      "firmware": "1.01",
+      "code": "0x1010000",
+      "updateBit": 15,
+      "status": "compatibility-untested",
+      "offsets": {
+        "allproc": 40705016,
+        "sysentvec": 12690888,
+        "sysentvecPs4": 12691232,
+        "cryptSingletonArray": 46521872,
+        "sysents": 1484720,
+        "sysentsPs4": 1451440,
+        "security": 103026804,
+        "rootvnode": 106321216,
+        "textDelta": 28573696,
+        "pagerTable": 12745792
+      },
+      "kstuffAnchorAdjustment": -16842752,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/1_01.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "edecf2238b71bfc9e91de03f92aa821eea6825ede14500eafbdb167ef4a2aaa7"
+    },
+    {
+      "firmware": "1.02",
+      "code": "0x1020000",
+      "updateBit": 16,
+      "status": "compatibility-untested",
+      "offsets": {
+        "allproc": 40705016,
+        "sysentvec": 12690888,
+        "sysentvecPs4": 12691232,
+        "cryptSingletonArray": 46521872,
+        "sysents": 1484720,
+        "sysentsPs4": 1451440,
+        "security": 103026804,
+        "rootvnode": 106321216,
+        "textDelta": 28573696,
+        "pagerTable": 12745792
+      },
+      "kstuffAnchorAdjustment": -16842752,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/1_02.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "081f96110be866f70b44dea3357b9d004e6fb6df689ee26831edf75164fefb8c"
+    },
+    {
+      "firmware": "1.05",
+      "code": "0x1050000",
+      "updateBit": 17,
+      "status": "compatibility-untested",
+      "offsets": {
+        "allproc": 40705048,
+        "sysentvec": 12690888,
+        "sysentvecPs4": 12691232,
+        "cryptSingletonArray": 46521872,
+        "sysents": 1484944,
+        "sysentsPs4": 1451664,
+        "security": 103026804,
+        "rootvnode": 106321216,
+        "textDelta": 28573696,
+        "pagerTable": 12745792
+      },
+      "kstuffAnchorAdjustment": -16842752,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/1_05.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "9ae34a82ddae0fd50f15c2b4e026c462f65919f9d87d0a8d422dea52bbe96a63"
+    },
+    {
+      "firmware": "1.10",
+      "code": "0x1100000",
+      "updateBit": 18,
+      "status": "compatibility-untested",
+      "offsets": {
+        "allproc": 40705048,
+        "sysentvec": 12690888,
+        "sysentvecPs4": 12691232,
+        "cryptSingletonArray": 46521872,
+        "sysents": 1484944,
+        "sysentsPs4": 1451664,
+        "security": 103026804,
+        "rootvnode": 106321216,
+        "textDelta": 28573696,
+        "pagerTable": 12745792
+      },
+      "kstuffAnchorAdjustment": -16842752,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/1_10.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "fe03aa3c3935930813148a43425c866725727ad6bdb0c5674f5f0250cb7bda57"
+    },
+    {
+      "firmware": "1.11",
+      "code": "0x1110000",
+      "updateBit": 19,
+      "status": "compatibility-untested",
+      "offsets": {
+        "allproc": 40705048,
+        "sysentvec": 12690888,
+        "sysentvecPs4": 12691232,
+        "cryptSingletonArray": 46521872,
+        "sysents": 1484944,
+        "sysentsPs4": 1451664,
+        "security": 103026804,
+        "rootvnode": 106321216,
+        "textDelta": 28573696,
+        "pagerTable": 12745792
+      },
+      "kstuffAnchorAdjustment": -16842752,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/1_11.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "8d2c87663e46b1767715fe0e7d3d706f4f13ee6a8e93beac614395f85213624f"
+    },
+    {
+      "firmware": "1.12",
+      "code": "0x1120000",
+      "updateBit": 20,
+      "status": "compatibility-untested",
+      "offsets": {
+        "allproc": 40705048,
+        "sysentvec": 12690888,
+        "sysentvecPs4": 12691232,
+        "cryptSingletonArray": 46521872,
+        "sysents": 1484944,
+        "sysentsPs4": 1451664,
+        "security": 103026804,
+        "rootvnode": 106321216,
+        "textDelta": 28573696,
+        "pagerTable": 12745792
+      },
+      "kstuffAnchorAdjustment": -16842752,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/1_12.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "36b097a706d0a3ee9d9e247fe7c518acc39ed70c3443d0c9fe9d998a5bf7887a"
+    },
+    {
+      "firmware": "1.13",
+      "code": "0x1130000",
+      "updateBit": 21,
+      "status": "compatibility-untested",
+      "offsets": {
+        "allproc": 40705048,
+        "sysentvec": 12690984,
+        "sysentvecPs4": 12691328,
+        "cryptSingletonArray": 46521872,
+        "sysents": 1484944,
+        "sysentsPs4": 1451664,
+        "security": 103026804,
+        "rootvnode": 106321216,
+        "textDelta": 28573696,
+        "pagerTable": 12745888
+      },
+      "kstuffAnchorAdjustment": -16842752,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/1_13.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "0432c1ab6eafbd28d43eea5c448c7e8921ad3e3051a76301d6e66cebeeed91fe"
+    },
+    {
+      "firmware": "1.14",
+      "code": "0x1140000",
+      "updateBit": 22,
+      "status": "compatibility-untested",
+      "offsets": {
+        "allproc": 40705048,
+        "sysentvec": 12690984,
+        "sysentvecPs4": 12691328,
+        "cryptSingletonArray": 46521872,
+        "sysents": 1484944,
+        "sysentsPs4": 1451664,
+        "security": 103026804,
+        "rootvnode": 106321216,
+        "textDelta": 28573696,
+        "pagerTable": 12745888
+      },
+      "kstuffAnchorAdjustment": -16842752,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/1_14.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "510566893ef786de5e7fc9f0ff89fd937955265a9cdb5b83d76ef8c6c3273727"
+    },
+    {
+      "firmware": "2.00",
+      "code": "0x2000000",
+      "updateBit": 23,
+      "status": "compatibility-untested",
+      "offsets": {
+        "allproc": 40901672,
+        "sysentvec": 12845720,
+        "sysentvecPs4": 12846096,
+        "cryptSingletonArray": 47260560,
+        "sysents": 1469712,
+        "sysentsPs4": 1434864,
+        "security": 104731252,
+        "rootvnode": 108082368,
+        "textDelta": 28835840,
+        "pagerTable": 12906336
+      },
+      "kstuffAnchorAdjustment": -16842752,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/2_00.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "414386f11932d48a90fef67d6a8a26617a1e5e8931fb7642c2e571c91f4720b8"
+    },
+    {
+      "firmware": "2.20",
+      "code": "0x2200000",
+      "updateBit": 24,
+      "status": "compatibility-untested",
+      "offsets": {
+        "allproc": 40901672,
+        "sysentvec": 12845784,
+        "sysentvecPs4": 12846160,
+        "cryptSingletonArray": 47260560,
+        "sysents": 1469904,
+        "sysentsPs4": 1435056,
+        "security": 104731252,
+        "rootvnode": 108082368,
+        "textDelta": 28835840,
+        "pagerTable": 12906400
+      },
+      "kstuffAnchorAdjustment": -16842752,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/2_20.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "387a912d6305506d15a2f80449bfe9100bbe6f18afa5708d57ae89442d1836a9"
+    },
+    {
+      "firmware": "2.25",
+      "code": "0x2250000",
+      "updateBit": 25,
+      "status": "compatibility-untested",
+      "offsets": {
+        "allproc": 40901672,
+        "sysentvec": 12845784,
+        "sysentvecPs4": 12846160,
+        "cryptSingletonArray": 47260560,
+        "sysents": 1469904,
+        "sysentsPs4": 1435056,
+        "security": 104731252,
+        "rootvnode": 108082368,
+        "textDelta": 28835840,
+        "pagerTable": 12906400
+      },
+      "kstuffAnchorAdjustment": -16842752,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/2_25.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "35b517cf0c30145851cbf5719699ecec61cea0d71a57538708221c4ca3572e4d"
+    },
+    {
+      "firmware": "2.26",
+      "code": "0x2260000",
+      "updateBit": 26,
+      "status": "compatibility-untested",
+      "offsets": {
+        "allproc": 40901672,
+        "sysentvec": 12845784,
+        "sysentvecPs4": 12846160,
+        "cryptSingletonArray": 47260560,
+        "sysents": 1469904,
+        "sysentsPs4": 1435056,
+        "security": 104731252,
+        "rootvnode": 108082368,
+        "textDelta": 28835840,
+        "pagerTable": 12906400
+      },
+      "kstuffAnchorAdjustment": -16842752,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/2_26.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "9a6bd89c71bce35d20ba70233b386ee72e6dafc8f7a013284498fd0a27d1c2dd"
+    },
+    {
+      "firmware": "2.30",
+      "code": "0x2300000",
+      "updateBit": 27,
+      "status": "compatibility-untested",
+      "offsets": {
+        "allproc": 40901672,
+        "sysentvec": 12846168,
+        "sysentvecPs4": 12846544,
+        "cryptSingletonArray": 47260560,
+        "sysents": 1469920,
+        "sysentsPs4": 1435072,
+        "security": 104731252,
+        "rootvnode": 108082368,
+        "textDelta": 28835840,
+        "pagerTable": 12906784
+      },
+      "kstuffAnchorAdjustment": -16842752,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/2_30.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "ed38ed9a7bc7626528062d413961f8685ee2dce66f2ffec14d32660b62828515"
+    },
+    {
+      "firmware": "2.50",
+      "code": "0x2500000",
+      "updateBit": 28,
+      "status": "compatibility-untested",
+      "offsets": {
+        "allproc": 40901672,
+        "sysentvec": 12846168,
+        "sysentvecPs4": 12846544,
+        "cryptSingletonArray": 47260560,
+        "sysents": 1469952,
+        "sysentsPs4": 1435104,
+        "security": 104731252,
+        "rootvnode": 108082368,
+        "textDelta": 28835840,
+        "pagerTable": 12906784
+      },
+      "kstuffAnchorAdjustment": -16842752,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/2_50.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "3030733d6b8a749fe0f6c624d4f928d438364e819689cf3735fb94c29e7195a5"
+    },
+    {
+      "firmware": "2.70",
+      "code": "0x2700000",
+      "updateBit": 29,
+      "status": "compatibility-untested",
+      "offsets": {
+        "allproc": 40901672,
+        "sysentvec": 12846168,
+        "sysentvecPs4": 12846544,
+        "cryptSingletonArray": 47260560,
+        "sysents": 1469952,
+        "sysentsPs4": 1435104,
+        "security": 104731252,
+        "rootvnode": 108082368,
+        "textDelta": 28835840,
+        "pagerTable": 12906784
+      },
+      "kstuffAnchorAdjustment": -16842752,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/2_70.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "3383ee830811687ca2dc31ad10e0f7d7aaa8bcf0d752854ce2eea9ae932df83f"
+    },
+    {
+      "firmware": "3.00",
+      "code": "0x3000000",
+      "updateBit": 30,
+      "status": "compatibility-untested",
+      "offsets": {
+        "allproc": 41344088,
+        "sysentvec": 13241560,
+        "sysentvecPs4": 13241936,
+        "cryptSingletonArray": 47814704,
+        "sysents": 1505056,
+        "sysentsPs4": 1470832,
+        "security": 105276532,
+        "rootvnode": 108704960,
+        "textDelta": 12386304,
+        "pagerTable": 13301952
+      },
+      "kstuffAnchorAdjustment": 0,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/3_00.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "3b10d839df42298bf1757fe3d20f2db5a638e013e63d228bb73899f63c1ded1f"
+    },
+    {
+      "firmware": "3.10",
+      "code": "0x3100000",
+      "updateBit": 31,
+      "status": "compatibility-untested",
+      "offsets": {
+        "allproc": 41344088,
+        "sysentvec": 13241560,
+        "sysentvecPs4": 13241936,
+        "cryptSingletonArray": 47814704,
+        "sysents": 1505056,
+        "sysentsPs4": 1470832,
+        "security": 105276532,
+        "rootvnode": 108704960,
+        "textDelta": 12386304,
+        "pagerTable": 13301952
+      },
+      "kstuffAnchorAdjustment": 0,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/3_10.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "904e40506f8b22b26c710dc8cc67d91c4f8b60c425cae98fd7f5faee179edcfc"
+    },
+    {
+      "firmware": "3.20",
+      "code": "0x3200000",
+      "updateBit": 32,
+      "status": "compatibility-untested",
+      "offsets": {
+        "allproc": 41344088,
+        "sysentvec": 13241560,
+        "sysentvecPs4": 13241936,
+        "cryptSingletonArray": 47814704,
+        "sysents": 1505056,
+        "sysentsPs4": 1470832,
+        "security": 105276532,
+        "rootvnode": 108704960,
+        "textDelta": 12386304,
+        "pagerTable": 13301952
+      },
+      "kstuffAnchorAdjustment": 0,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/3_20.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "14fb027d56a68f6023a807a0d68b6126e2a1cd81521f2133a820b9d9a11ba98b"
+    },
+    {
+      "firmware": "3.21",
+      "code": "0x3210000",
+      "updateBit": 33,
+      "status": "compatibility-untested",
+      "offsets": {
+        "allproc": 41344088,
+        "sysentvec": 13241560,
+        "sysentvecPs4": 13241936,
+        "cryptSingletonArray": 47814704,
+        "sysents": 1505056,
+        "sysentsPs4": 1470832,
+        "security": 105276532,
+        "rootvnode": 108704960,
+        "textDelta": 12386304,
+        "pagerTable": 13301952
+      },
+      "kstuffAnchorAdjustment": 0,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/3_21.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "c635732e6c22c1f83f38629f1b6db813e77ef2820017c0f0fc2ba87c4de2d5e3"
+    },
+    {
+      "firmware": "4.00",
+      "code": "0x4000000",
+      "updateBit": 34,
+      "status": "compatibility-untested",
+      "offsets": {
+        "allproc": 41868472,
+        "sysentvec": 13704120,
+        "sysentvecPs4": 13704496,
+        "cryptSingletonArray": 48437296,
+        "sysents": 1509824,
+        "sysentsPs4": 1475600,
+        "security": 105931892,
+        "rootvnode": 107902144,
+        "textDelta": 12582912,
+        "pagerTable": 13764672
+      },
+      "kstuffAnchorAdjustment": 0,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/4_00.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "8de483defc69b83c874f5b5bb225d94870d62959e1c709354b764d5797bb3130"
+    },
+    {
+      "firmware": "4.02",
+      "code": "0x4020000",
+      "updateBit": 35,
+      "status": "compatibility-untested",
+      "offsets": {
+        "allproc": 41868472,
+        "sysentvec": 13704120,
+        "sysentvecPs4": 13704496,
+        "cryptSingletonArray": 48437296,
+        "sysents": 1509824,
+        "sysentsPs4": 1475600,
+        "security": 105931892,
+        "rootvnode": 107902144,
+        "textDelta": 12582912,
+        "pagerTable": 13764672
+      },
+      "kstuffAnchorAdjustment": 0,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/4_02.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "2feb8a3e27240684fb8eab1998fbe326b756476c1179c15fd5a8ea4089a57a70"
+    },
+    {
+      "firmware": "4.03",
+      "code": "0x4030000",
+      "updateBit": 36,
+      "status": "compatibility-untested",
+      "offsets": {
+        "allproc": 41868472,
+        "sysentvec": 13704120,
+        "sysentvecPs4": 13704496,
+        "cryptSingletonArray": 48437296,
+        "sysents": 1509824,
+        "sysentsPs4": 1475600,
+        "security": 105931892,
+        "rootvnode": 107902144,
+        "textDelta": 12582912,
+        "pagerTable": 13764672
+      },
+      "kstuffAnchorAdjustment": 0,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/4_03.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "e563be833a9400ef1e71e08afa3634b3f5c5fa06906d41097342f89cffa342a6"
+    },
+    {
+      "firmware": "4.50",
+      "code": "0x4500000",
+      "updateBit": 37,
+      "status": "compatibility-untested",
+      "offsets": {
+        "allproc": 41868472,
+        "sysentvec": 13704120,
+        "sysentvecPs4": 13704496,
+        "cryptSingletonArray": 48437296,
+        "sysents": 1509824,
+        "sysentsPs4": 1475600,
+        "security": 105931892,
+        "rootvnode": 107902144,
+        "textDelta": 12582912,
+        "pagerTable": 13764672
+      },
+      "kstuffAnchorAdjustment": 0,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/4_50.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "dfc3940ae642d940ff4b956e6ce151a8cd977410935ae9d0ae68987f68d66196"
+    },
+    {
+      "firmware": "4.51",
+      "code": "0x4510000",
+      "updateBit": 38,
+      "status": "compatibility-untested",
+      "offsets": {
+        "allproc": 41868472,
+        "sysentvec": 13704120,
+        "sysentvecPs4": 13704496,
+        "cryptSingletonArray": 48437296,
+        "sysents": 1509824,
+        "sysentsPs4": 1475600,
+        "security": 105931892,
+        "rootvnode": 107902144,
+        "textDelta": 12582912,
+        "pagerTable": 13764672
+      },
+      "kstuffAnchorAdjustment": 0,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/4_51.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "2de313f2aa137b1acf25b193a214054eb0fdf44db5791c6236964de7f387f044"
+    },
+    {
+      "firmware": "5.00",
+      "code": "0x5000000",
+      "updateBit": 39,
+      "status": "compatibility-untested",
+      "offsets": {
+        "allproc": 43113728,
+        "sysentvec": 14683112,
+        "sysentvecPs4": 14683488,
+        "cryptSingletonArray": 49616944,
+        "sysents": 1777392,
+        "sysentsPs4": 1743168,
+        "security": 107243244,
+        "rootvnode": 109393168,
+        "textDelta": 12845056,
+        "pagerTable": 14745328
+      },
+      "kstuffAnchorAdjustment": 0,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/5_00.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "a0434b323a7bf4cf999d69fb70025298dc21431e4eeb70eb0cc647cefad46846"
+    },
+    {
+      "firmware": "5.02",
+      "code": "0x5020000",
+      "updateBit": 40,
+      "status": "compatibility-untested",
+      "offsets": {
+        "allproc": 43113728,
+        "sysentvec": 14683112,
+        "sysentvecPs4": 14683488,
+        "cryptSingletonArray": 49616944,
+        "sysents": 1777392,
+        "sysentsPs4": 1743168,
+        "security": 107243244,
+        "rootvnode": 109393168,
+        "textDelta": 12845056,
+        "pagerTable": 14745328
+      },
+      "kstuffAnchorAdjustment": 0,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/5_02.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "df6d0911046628851a4c67444ececcd2bb0e913a7ccdc45e0e2999071271b72f"
+    },
+    {
+      "firmware": "5.10",
+      "code": "0x5100000",
+      "updateBit": 41,
+      "status": "compatibility-untested",
+      "offsets": {
+        "allproc": 43113728,
+        "sysentvec": 14683112,
+        "sysentvecPs4": 14683488,
+        "cryptSingletonArray": 49616944,
+        "sysents": 1777728,
+        "sysentsPs4": 1743504,
+        "security": 107243244,
+        "rootvnode": 109393168,
+        "textDelta": 12845056,
+        "pagerTable": 14745328
+      },
+      "kstuffAnchorAdjustment": 0,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/5_10.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "287ab86af77f6372d9b2815cf254f5f9a46f1cc2f72f0b040b93744e9bcb32b1"
+    },
+    {
+      "firmware": "5.50",
+      "code": "0x5500000",
+      "updateBit": 42,
+      "status": "compatibility-untested",
+      "offsets": {
+        "allproc": 43113728,
+        "sysentvec": 14683112,
+        "sysentvecPs4": 14683488,
+        "cryptSingletonArray": 49600560,
+        "sysents": 1778192,
+        "sysentsPs4": 1743968,
+        "security": 107243244,
+        "rootvnode": 109393168,
+        "textDelta": 12845056,
+        "pagerTable": 14745328
+      },
+      "kstuffAnchorAdjustment": 0,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/5_50.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "da3000bd3711810beced743daeeb43b2b979ce5ecf13487b02319427992d9796"
+    },
+    {
+      "firmware": "6.00",
+      "code": "0x6000000",
+      "updateBit": 43,
+      "status": "compatibility-untested",
+      "offsets": {
+        "allproc": 42376480,
+        "sysentvec": 14815400,
+        "sysentvecPs4": 14815776,
+        "cryptSingletonArray": 48879664,
+        "sysents": 1788320,
+        "sysentsPs4": 1754096,
+        "security": 106522860,
+        "rootvnode": 108655888,
+        "textDelta": 12976128,
+        "pagerTable": 14877712
+      },
+      "kstuffAnchorAdjustment": 0,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/6_00.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "f34607842ce9d0e709bd0b11a3da667bde811b4f7eb33d9fa38f62a1e3d32d98"
+    },
+    {
+      "firmware": "6.02",
+      "code": "0x6020000",
+      "updateBit": 44,
+      "status": "compatibility-untested",
+      "offsets": {
+        "allproc": 42376480,
+        "sysentvec": 14815400,
+        "sysentvecPs4": 14815776,
+        "cryptSingletonArray": 48879664,
+        "sysents": 1788400,
+        "sysentsPs4": 1754176,
+        "security": 106522860,
+        "rootvnode": 108655888,
+        "textDelta": 12976128,
+        "pagerTable": 14877712
+      },
+      "kstuffAnchorAdjustment": 0,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/6_02.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "614c2ff9fd263411dfb61c7e9ba54ee62d2a3d0c2dad4d7ef7de3b4728168db8"
+    },
+    {
+      "firmware": "6.50",
+      "code": "0x6500000",
+      "updateBit": 45,
+      "status": "compatibility-untested",
+      "offsets": {
+        "allproc": 42376480,
+        "sysentvec": 14815400,
+        "sysentvecPs4": 14815776,
+        "cryptSingletonArray": 48879664,
+        "sysents": 1788400,
+        "sysentsPs4": 1754176,
+        "security": 106522860,
+        "rootvnode": 108655888,
+        "textDelta": 12976128,
+        "pagerTable": 14877712
+      },
+      "kstuffAnchorAdjustment": 0,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/6_50.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "204e93bfaaad30fe0e7704223569624eedc47bdbbaf40e133ef023a4526d40eb"
+    },
+    {
+      "firmware": "7.00",
+      "code": "0x7000000",
+      "updateBit": 46,
+      "status": "compatibility-untested",
+      "offsets": {
+        "allproc": 42310992,
+        "sysentvec": 14817976,
+        "sysentvecPs4": 14818352,
+        "cryptSingletonArray": 47650864,
+        "sysents": 1798192,
+        "sysentsPs4": 1763968,
+        "security": 11305060,
+        "rootvnode": 51148048,
+        "textDelta": 12910592,
+        "pagerTable": 14880960
+      },
+      "kstuffAnchorAdjustment": 0,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/7_00.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "9598ee47c24b34b646cd49adf8452c0f6f5357b0e0e748b90bb19f1aac30ab3f"
+    },
+    {
+      "firmware": "7.01",
+      "code": "0x7010000",
+      "updateBit": 47,
+      "status": "compatibility-untested",
+      "offsets": {
+        "allproc": 42310992,
+        "sysentvec": 14817976,
+        "sysentvecPs4": 14818352,
+        "cryptSingletonArray": 47650864,
+        "sysents": 1798192,
+        "sysentsPs4": 1763968,
+        "security": 11305060,
+        "rootvnode": 51148048,
+        "textDelta": 12910592,
+        "pagerTable": 14880960
+      },
+      "kstuffAnchorAdjustment": 0,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/7_01.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "2416936ea24056ea1ca8605b5f7d098389513549ec9333ef4d97dfd91c2a6b6e"
+    },
+    {
+      "firmware": "7.20",
+      "code": "0x7200000",
+      "updateBit": 48,
+      "status": "compatibility-untested",
+      "offsets": {
+        "allproc": 42310992,
+        "sysentvec": 14818168,
+        "sysentvecPs4": 14818544,
+        "cryptSingletonArray": 47650864,
+        "sysents": 1798560,
+        "sysentsPs4": 1764336,
+        "security": 11305060,
+        "rootvnode": 51148048,
+        "textDelta": 12910592,
+        "pagerTable": 14881152
+      },
+      "kstuffAnchorAdjustment": 0,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/7_20.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "a985a0ccf36eecb0a29006f930e3b585db4c2c55975743e8e29fb3fab401d1e9"
+    },
+    {
+      "firmware": "7.40",
+      "code": "0x7400000",
+      "updateBit": 49,
+      "status": "compatibility-untested",
+      "offsets": {
+        "allproc": 42310992,
+        "sysentvec": 14818168,
+        "sysentvecPs4": 14818544,
+        "cryptSingletonArray": 47650864,
+        "sysents": 1798560,
+        "sysentsPs4": 1764336,
+        "security": 11305060,
+        "rootvnode": 51148048,
+        "textDelta": 12910592,
+        "pagerTable": 14881152
+      },
+      "kstuffAnchorAdjustment": 0,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/7_40.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "7b9858546b9e12f4671412f8af83a7620838dec6af3a833e045e48221f712287"
+    },
+    {
+      "firmware": "7.60",
+      "code": "0x7600000",
+      "updateBit": 50,
+      "status": "compatibility-untested",
+      "offsets": {
+        "allproc": 42310992,
+        "sysentvec": 14818168,
+        "sysentvecPs4": 14818544,
+        "cryptSingletonArray": 47650864,
+        "sysents": 1798752,
+        "sysentsPs4": 1764528,
+        "security": 11305060,
+        "rootvnode": 51148048,
+        "textDelta": 12910592,
+        "pagerTable": 14881152
+      },
+      "kstuffAnchorAdjustment": 0,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/7_60.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "d1e154c191282be906f8994571a54ec845e72c520795467615a752930292866e"
+    },
+    {
+      "firmware": "7.61",
+      "code": "0x7610000",
+      "updateBit": 51,
+      "status": "compatibility-untested",
+      "offsets": {
+        "allproc": 42310992,
+        "sysentvec": 14818168,
+        "sysentvecPs4": 14818544,
+        "cryptSingletonArray": 47650864,
+        "sysents": 1798752,
+        "sysentsPs4": 1764528,
+        "security": 11305060,
+        "rootvnode": 51148048,
+        "textDelta": 12910592,
+        "pagerTable": 14881152
+      },
+      "kstuffAnchorAdjustment": 0,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/7_61.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "bbabf32340d369669bcf4563d69c086ae572ef484684eb210a04582a61b65d6a"
+    },
+    {
+      "firmware": "8.00",
+      "code": "0x8000000",
+      "updateBit": 52,
+      "status": "compatibility-untested",
+      "offsets": {
+        "allproc": 42425680,
+        "sysentvec": 14818472,
+        "sysentvecPs4": 14818848,
+        "cryptSingletonArray": 47765552,
+        "sysents": 1736112,
+        "sysentsPs4": 1701888,
+        "security": 11284580,
+        "rootvnode": 51361040,
+        "textDelta": 13041664,
+        "pagerTable": 14881360
+      },
+      "kstuffAnchorAdjustment": 0,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/8_00.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "a262fd35109d80db4af285c7ea1c4e2af792e3a589ee936b33d25e6c0710e70d"
+    },
+    {
+      "firmware": "8.20",
+      "code": "0x8200000",
+      "updateBit": 53,
+      "status": "compatibility-untested",
+      "offsets": {
+        "allproc": 42425680,
+        "sysentvec": 14818472,
+        "sysentvecPs4": 14818848,
+        "cryptSingletonArray": 47765552,
+        "sysents": 1736112,
+        "sysentsPs4": 1701888,
+        "security": 11284580,
+        "rootvnode": 51361040,
+        "textDelta": 13041664,
+        "pagerTable": 14881360
+      },
+      "kstuffAnchorAdjustment": 0,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/8_20.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "97665d704b9c3624da3aa2b62f829eecefc78c0dd3127bd73f94cfa852bdc0b8"
+    },
+    {
+      "firmware": "8.40",
+      "code": "0x8400000",
+      "updateBit": 54,
+      "status": "compatibility-untested",
+      "offsets": {
+        "allproc": 42425680,
+        "sysentvec": 14818472,
+        "sysentvecPs4": 14818848,
+        "cryptSingletonArray": 47765552,
+        "sysents": 1736112,
+        "sysentsPs4": 1701888,
+        "security": 11284580,
+        "rootvnode": 51361040,
+        "textDelta": 13041664,
+        "pagerTable": 14881360
+      },
+      "kstuffAnchorAdjustment": 0,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/8_40.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "34426437ded33db953635ef5672ea0c54c9c2fd4cba21fefaacf5fec49217a6a"
+    },
+    {
+      "firmware": "8.60",
+      "code": "0x8600000",
+      "updateBit": 55,
+      "status": "compatibility-untested",
+      "offsets": {
+        "allproc": 42425680,
+        "sysentvec": 14818472,
+        "sysentvecPs4": 14818848,
+        "cryptSingletonArray": 47765552,
+        "sysents": 1736112,
+        "sysentsPs4": 1701888,
+        "security": 11284580,
+        "rootvnode": 51361040,
+        "textDelta": 13041664,
+        "pagerTable": 14881360
+      },
+      "kstuffAnchorAdjustment": 0,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/8_60.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "37ad67760eea8a75b6eb3264482a8ee13c6256195fe59146855e8487836111d6"
+    },
+    {
+      "firmware": "9.00",
+      "code": "0x9000000",
+      "updateBit": 56,
+      "status": "compatibility-untested",
+      "offsets": {
+        "allproc": 41246032,
+        "sysentvec": 14394952,
+        "sysentvecPs4": 14395328,
+        "cryptSingletonArray": 46586416,
+        "sysents": 1747984,
+        "sysentsPs4": 1713664,
+        "security": 14098532,
+        "rootvnode": 50181392,
+        "textDelta": 13238272,
+        "pagerTable": 14550048
+      },
+      "kstuffAnchorAdjustment": 0,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/9_00.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "6d1246a34a095b746a51c22dfba2bce5254f3082aacfd5364867b1570961a135"
+    },
+    {
+      "firmware": "9.05",
+      "code": "0x9050000",
+      "updateBit": 57,
+      "status": "compatibility-untested",
+      "offsets": {
+        "allproc": 41246032,
+        "sysentvec": 14394952,
+        "sysentvecPs4": 14395328,
+        "cryptSingletonArray": 46586416,
+        "sysents": 1747984,
+        "sysentsPs4": 1713664,
+        "security": 14102628,
+        "rootvnode": 50181392,
+        "textDelta": 13238272,
+        "pagerTable": 14550048
+      },
+      "kstuffAnchorAdjustment": 0,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/9_05.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "e684132b7d5bddea295a30529581f093d712b8696eecc2fafaef7b003cc308e4"
+    },
+    {
+      "firmware": "9.20",
+      "code": "0x9200000",
+      "updateBit": 58,
+      "status": "compatibility-untested",
+      "offsets": {
+        "allproc": 41246032,
+        "sysentvec": 14394952,
+        "sysentvecPs4": 14395328,
+        "cryptSingletonArray": 46586416,
+        "sysents": 1748064,
+        "sysentsPs4": 1713744,
+        "security": 14102628,
+        "rootvnode": 50181392,
+        "textDelta": 13238272,
+        "pagerTable": 14550048
+      },
+      "kstuffAnchorAdjustment": 0,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/9_20.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "5713e052b6505545e629b7f3f485cc2a7ecc434471177f5edb81b10e153c7084"
+    },
+    {
+      "firmware": "9.40",
+      "code": "0x9400000",
+      "updateBit": 59,
+      "status": "compatibility-untested",
+      "offsets": {
+        "allproc": 41246032,
+        "sysentvec": 14394952,
+        "sysentvecPs4": 14395328,
+        "cryptSingletonArray": 46586416,
+        "sysents": 1748064,
+        "sysentsPs4": 1713744,
+        "security": 14102628,
+        "rootvnode": 50181392,
+        "textDelta": 13238272,
+        "pagerTable": 14550048
+      },
+      "kstuffAnchorAdjustment": 0,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/9_40.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "7c3f7188279e5279f524202973a482d324cc726942a3f9f8fa29725fefbecf8a"
+    },
+    {
+      "firmware": "9.60",
+      "code": "0x9600000",
+      "updateBit": 60,
+      "status": "compatibility-untested",
+      "offsets": {
+        "allproc": 41246032,
+        "sysentvec": 14394952,
+        "sysentvecPs4": 14395328,
+        "cryptSingletonArray": 46586416,
+        "sysents": 1748064,
+        "sysentsPs4": 1713744,
+        "security": 14102628,
+        "rootvnode": 50181392,
+        "textDelta": 13238272,
+        "pagerTable": 14550048
+      },
+      "kstuffAnchorAdjustment": 0,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/9_60.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "5fb1f4f4604d5efeaa8da5737ea117235b9d987d8a6d3d2a28f9b09983be5d64"
+    },
+    {
+      "firmware": "10.00",
+      "code": "0x10000000",
+      "updateBit": 61,
+      "status": "compatibility-untested",
+      "offsets": {
+        "allproc": 41311600,
+        "sysentvec": 14395096,
+        "sysentvecPs4": 14395472,
+        "cryptSingletonArray": 46357872,
+        "sysents": 1757440,
+        "sysentsPs4": 1723312,
+        "security": 14127204,
+        "rootvnode": 49952016,
+        "textDelta": 13369344,
+        "pagerTable": 14550256
+      },
+      "kstuffAnchorAdjustment": 0,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/10_00.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "612a5951a0249aca2b145e4ca6506d747a1ca1bc8bdeb094f013b9bc4ac3a119"
+    },
+    {
+      "firmware": "10.01",
+      "code": "0x10010000",
+      "updateBit": 62,
+      "status": "compatibility-untested",
+      "offsets": {
+        "allproc": 41311600,
+        "sysentvec": 14395096,
+        "sysentvecPs4": 14395472,
+        "cryptSingletonArray": 46357872,
+        "sysents": 1757440,
+        "sysentsPs4": 1723312,
+        "security": 14127204,
+        "rootvnode": 49952016,
+        "textDelta": 13369344,
+        "pagerTable": 14550256
+      },
+      "kstuffAnchorAdjustment": 0,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/10_01.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "226fd1f144a64b358aa76c68ed7c19901a518a41701a1e2399466b9fed9467d7"
+    },
+    {
+      "firmware": "10.20",
+      "code": "0x10200000",
+      "updateBit": 63,
+      "status": "compatibility-untested",
+      "offsets": {
+        "allproc": 41311600,
+        "sysentvec": 14395096,
+        "sysentvecPs4": 14395472,
+        "cryptSingletonArray": 46357872,
+        "sysents": 1757472,
+        "sysentsPs4": 1723344,
+        "security": 14127204,
+        "rootvnode": 49952016,
+        "textDelta": 13369344,
+        "pagerTable": 14550256
+      },
+      "kstuffAnchorAdjustment": 0,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/10_20.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "2f3f59970d00c046e95f4c87dfbb98e63b5ddaa53be7fb9dc740eb26c69d8583"
+    },
+    {
+      "firmware": "10.40",
+      "code": "0x10400000",
+      "updateBit": 64,
+      "status": "compatibility-untested",
+      "offsets": {
+        "allproc": 41311600,
+        "sysentvec": 14395096,
+        "sysentvecPs4": 14395472,
+        "cryptSingletonArray": 46357872,
+        "sysents": 1757472,
+        "sysentsPs4": 1723344,
+        "security": 14127204,
+        "rootvnode": 49952016,
+        "textDelta": 13369344,
+        "pagerTable": 14550256
+      },
+      "kstuffAnchorAdjustment": 0,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/10_40.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "ef7b84d8d1611334f4c320eadff5fce6f7dcc2996a7920a54a859adccb04a3b7"
+    },
+    {
+      "firmware": "10.60",
+      "code": "0x10600000",
+      "updateBit": 65,
+      "status": "compatibility-untested",
+      "offsets": {
+        "allproc": 41311600,
+        "sysentvec": 14395096,
+        "sysentvecPs4": 14395472,
+        "cryptSingletonArray": 46357872,
+        "sysents": 1757472,
+        "sysentsPs4": 1723344,
+        "security": 14127204,
+        "rootvnode": 49952016,
+        "textDelta": 13369344,
+        "pagerTable": 14550256
+      },
+      "kstuffAnchorAdjustment": 0,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/10_60.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "39629acf316e5f7b974910d1b19b3f18186ae3765b82191c1121887ba179193f"
+    },
+    {
+      "firmware": "11.00",
+      "code": "0x11000000",
+      "updateBit": 0,
+      "status": "original-beta-profile",
+      "offsets": {
+        "allproc": 42425712,
+        "sysentvec": 14466168,
+        "sysentvecPs4": 14466544,
+        "cryptSingletonArray": 47488368,
+        "sysents": 1772400,
+        "sysentsPs4": 1738272,
+        "security": 14205028,
+        "rootvnode": 51082512,
+        "textDelta": 13828096,
+        "pagerTable": 14620992
+      },
+      "kstuffAnchorAdjustment": 0,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/11_00.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "7255dfd55126fbb487fc48f7ead9afdd24da03d03400d7e1a3d2e94cc31ddba1"
+    },
+    {
+      "firmware": "11.20",
+      "code": "0x11200000",
+      "updateBit": 1,
+      "status": "original-beta-profile",
+      "offsets": {
+        "allproc": 42425712,
+        "sysentvec": 14466168,
+        "sysentvecPs4": 14466544,
+        "cryptSingletonArray": 47488368,
+        "sysents": 1772400,
+        "sysentsPs4": 1738272,
+        "security": 14205028,
+        "rootvnode": 51082512,
+        "textDelta": 13828096,
+        "pagerTable": 14620992
+      },
+      "kstuffAnchorAdjustment": 0,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/11_20.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "4e728dc6c3ef9fc55506a818434704580d01aaa70e19a70896d7539f569ce07f"
+    },
+    {
+      "firmware": "11.40",
+      "code": "0x11400000",
+      "updateBit": 66,
+      "status": "compatibility-untested",
+      "offsets": {
+        "allproc": 42425712,
+        "sysentvec": 14466200,
+        "sysentvecPs4": 14466576,
+        "cryptSingletonArray": 47488368,
+        "sysents": 1772320,
+        "sysentsPs4": 1738192,
+        "security": 14205028,
+        "rootvnode": 51082512,
+        "textDelta": 13828096,
+        "pagerTable": 14621024
+      },
+      "kstuffAnchorAdjustment": 0,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/11_40.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "c00208508499c2a24073de7d82056293f03cd907b0e83d9ab0cd771d1978b663"
+    },
+    {
+      "firmware": "11.60",
+      "code": "0x11600000",
+      "updateBit": 2,
+      "status": "original-beta-profile",
+      "offsets": {
+        "allproc": 42425712,
+        "sysentvec": 14466200,
+        "sysentvecPs4": 14466576,
+        "cryptSingletonArray": 47488368,
+        "sysents": 1771744,
+        "sysentsPs4": 1737616,
+        "security": 14205028,
+        "rootvnode": 51082512,
+        "textDelta": 13828096,
+        "pagerTable": 14621024
+      },
+      "kstuffAnchorAdjustment": 0,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/11_60.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "fac4c608acc7cafd63c57602ba37f984afebc5cfc59bf29124a8d475e7a8e620"
+    },
+    {
+      "firmware": "12.00",
+      "code": "0x12000000",
+      "updateBit": 3,
+      "status": "original-beta-profile",
+      "offsets": {
+        "allproc": 42491392,
+        "sysentvec": 14469496,
+        "sysentvecPs4": 14469872,
+        "cryptSingletonArray": 47586864,
+        "sysents": 1766608,
+        "sysentsPs4": 1732480,
+        "security": 14168164,
+        "rootvnode": 51213584,
+        "textDelta": 13959168,
+        "pagerTable": 14624864
+      },
+      "kstuffAnchorAdjustment": 0,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/12_00.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "6a634ddfc47871025ce046328de882826faf3364b8166758e6a0127676bad80c"
+    },
+    {
+      "firmware": "12.02",
+      "code": "0x12020000",
+      "updateBit": 4,
+      "status": "original-beta-profile",
+      "offsets": {
+        "allproc": 42491392,
+        "sysentvec": 14469496,
+        "sysentvecPs4": 14469872,
+        "cryptSingletonArray": 47586864,
+        "sysents": 1766608,
+        "sysentsPs4": 1732480,
+        "security": 14168164,
+        "rootvnode": 51213584,
+        "textDelta": 13959168,
+        "pagerTable": 14624864
+      },
+      "kstuffAnchorAdjustment": 0,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/12_02.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "97ce4473568140bd36ab8827be587130bd47d86d2f8f944e2976fcbf0b59edc9"
+    },
+    {
+      "firmware": "12.20",
+      "code": "0x12200000",
+      "updateBit": 5,
+      "status": "original-beta-profile",
+      "offsets": {
+        "allproc": 42491392,
+        "sysentvec": 14469496,
+        "sysentvecPs4": 14469872,
+        "cryptSingletonArray": 47586864,
+        "sysents": 1766608,
+        "sysentsPs4": 1732480,
+        "security": 14168164,
+        "rootvnode": 51213584,
+        "textDelta": 13959168,
+        "pagerTable": 14624864
+      },
+      "kstuffAnchorAdjustment": 0,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/12_20.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "a9f5dea3f043d6e9ea398235b1f26904ccbeb5f1aabfd527798c92d2433e5616"
+    },
+    {
+      "firmware": "12.40",
+      "code": "0x12400000",
+      "updateBit": 6,
+      "status": "original-beta-profile",
+      "offsets": {
+        "allproc": 42491392,
+        "sysentvec": 14469496,
+        "sysentvecPs4": 14469872,
+        "cryptSingletonArray": 47586864,
+        "sysents": 1766608,
+        "sysentsPs4": 1732480,
+        "security": 14168164,
+        "rootvnode": 51213584,
+        "textDelta": 13959168,
+        "pagerTable": 14624864
+      },
+      "kstuffAnchorAdjustment": 0,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/12_40.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "f562f1813781a961611095c1f140064dcf3ae0ba9c3671ea3893309c02d73bc7"
+    },
+    {
+      "firmware": "12.60",
+      "code": "0x12600000",
+      "updateBit": 7,
+      "status": "original-beta-profile",
+      "offsets": {
+        "allproc": 42491392,
+        "sysentvec": 14469496,
+        "sysentvecPs4": 14469872,
+        "cryptSingletonArray": 47586864,
+        "sysents": 1766608,
+        "sysentsPs4": 1732480,
+        "security": 14168164,
+        "rootvnode": 51213584,
+        "textDelta": 13959168,
+        "pagerTable": 14624864
+      },
+      "kstuffAnchorAdjustment": 0,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/12_60.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "fdc2e337b9d5e0b5265782ff9a73bc0e72197563057aa5aad05f43f3330e1f82"
+    },
+    {
+      "firmware": "12.70",
+      "code": "0x12700000",
+      "updateBit": 8,
+      "status": "original-beta-profile",
+      "offsets": {
+        "allproc": 42491392,
+        "sysentvec": 14469496,
+        "sysentvecPs4": 14469872,
+        "cryptSingletonArray": 47586864,
+        "sysents": 1766608,
+        "sysentsPs4": 1732480,
+        "security": 14168164,
+        "rootvnode": 51213584,
+        "textDelta": 13959168,
+        "pagerTable": 14624864
+      },
+      "kstuffAnchorAdjustment": 0,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/12_70.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "56135da66831babe80e231c1a3fa9b698ce34e31cad4a1273943610b47e73f14"
+    },
+    {
+      "firmware": "13.00",
+      "code": "0x13000000",
+      "updateBit": 9,
+      "status": "original-beta-profile",
+      "offsets": {
+        "allproc": 42753536,
+        "sysentvec": 14538936,
+        "sysentvecPs4": 14539312,
+        "cryptSingletonArray": 47947376,
+        "sysents": 1796704,
+        "sysentsPs4": 1761744,
+        "security": 14258276,
+        "rootvnode": 51590416,
+        "textDelta": 13303808,
+        "pagerTable": 14694608
+      },
+      "kstuffAnchorAdjustment": 0,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/13_00.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "571b6998448bd952549a633f8f638ed946843a11786e5849ebcbf305d988851b"
+    },
+    {
+      "firmware": "13.20",
+      "code": "0x13200000",
+      "updateBit": 10,
+      "status": "original-beta-profile",
+      "offsets": {
+        "allproc": 42753536,
+        "sysentvec": 14538936,
+        "sysentvecPs4": 14539312,
+        "cryptSingletonArray": 47947376,
+        "sysents": 1796800,
+        "sysentsPs4": 1761840,
+        "security": 14258276,
+        "rootvnode": 51590416,
+        "textDelta": 13303808,
+        "pagerTable": 14694608
+      },
+      "kstuffAnchorAdjustment": 0,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/13_20.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "c3fa16367ccf70c0344d60f8816238cde4e12976e7d031fc259ab81cb478a1e5"
+    },
+    {
+      "firmware": "13.40",
+      "code": "0x13400000",
+      "updateBit": 11,
+      "status": "original-beta-profile",
+      "offsets": {
+        "allproc": 42770048,
+        "sysentvec": 14539000,
+        "sysentvecPs4": 14539376,
+        "cryptSingletonArray": 47963760,
+        "sysents": 1797424,
+        "sysentsPs4": 1762464,
+        "security": 14258276,
+        "rootvnode": 51606800,
+        "textDelta": 13303808,
+        "pagerTable": 14694672
+      },
+      "kstuffAnchorAdjustment": 0,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/13_40.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "ac0a4eb392ccf6a257138de0f90b0a060a0e333d4d1c255031f08cca78f77c3d"
+    },
+    {
+      "firmware": "13.42",
+      "code": "0x13420000",
+      "updateBit": 12,
+      "status": "original-beta-profile",
+      "offsets": {
+        "allproc": 42770048,
+        "sysentvec": 14539000,
+        "sysentvecPs4": 14539376,
+        "cryptSingletonArray": 47963760,
+        "sysents": 1797424,
+        "sysentsPs4": 1762464,
+        "security": 14258276,
+        "rootvnode": 51606800,
+        "textDelta": 13303808,
+        "pagerTable": 14694672
+      },
+      "kstuffAnchorAdjustment": 0,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/13_42.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "d8f9096322b78e19692bf5cdde42294ddedad05b8876b984417c4ab3ca5c4643"
+    },
+    {
+      "firmware": "13.60",
+      "code": "0x13600000",
+      "updateBit": 13,
+      "status": "original-beta-profile",
+      "offsets": {
+        "allproc": 42770048,
+        "sysentvec": 14539000,
+        "sysentvecPs4": 14539376,
+        "cryptSingletonArray": 48029296,
+        "sysents": 1797712,
+        "sysentsPs4": 1762752,
+        "security": 14270564,
+        "rootvnode": 51688720,
+        "textDelta": 13369344,
+        "pagerTable": 14694672
+      },
+      "kstuffAnchorAdjustment": 0,
+      "sourceUrls": {
+        "kernel": "https://github.com/ps5-payload-dev/sdk/blob/f5d40f02770e9b0001dd9e18056eca70b3da8b40/crt/kernel.c",
+        "kstuff": "https://github.com/EchoStretch/kstuff-lite/blob/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17/prosper0gdb/offsets/13_60.h",
+        "pager": "https://github.com/ps5-payload-dev/ftpsrv/blob/23737c4738d15b9b9b036665bbf008d8fd6d82d2/self-prospero.c"
+      },
+      "kstuffTableSha256": "64c5819c481b1b86d495a8e4db56046bb7d981fffe739d40e30b592343f3a57c"
+    }
+  ],
+  "sourceArchives": [
+    {
+      "name": "sdk",
+      "repo": "ps5-payload-dev/sdk",
+      "commit": "f5d40f02770e9b0001dd9e18056eca70b3da8b40",
+      "url": "https://codeload.github.com/ps5-payload-dev/sdk/zip/f5d40f02770e9b0001dd9e18056eca70b3da8b40",
+      "sha256": "f5615e1986d52c495ae2d8cad258a5230b79b6936a1d068d038cd0a77cec77ea"
+    },
+    {
+      "name": "kstuff",
+      "repo": "EchoStretch/kstuff-lite",
+      "commit": "48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17",
+      "url": "https://codeload.github.com/EchoStretch/kstuff-lite/zip/48cd2c4ce62aa9ca0c2cc014c1e512f276ae7c17",
+      "sha256": "06434f9a96a307bdc14bfa4d5a4c4c6eb0bb00684bbd1a68d4b9efcd5eb5f092"
+    },
+    {
+      "name": "ftp",
+      "repo": "ps5-payload-dev/ftpsrv",
+      "commit": "23737c4738d15b9b9b036665bbf008d8fd6d82d2",
+      "url": "https://codeload.github.com/ps5-payload-dev/ftpsrv/zip/23737c4738d15b9b9b036665bbf008d8fd6d82d2",
+      "sha256": "dcfbe707eaa8efee621e20fedb34d0c8c99529f4cbc750ed9feaed74055c90a4"
+    }
+  ],
+  "sourceFiles": {
+    "sdk/crt/kernel.c": "16ca32ffc36309f2caa768d2f4e565f8d31186d7f8625de83bf3f1869e0c81c0",
+    "ftp/self-prospero.c": "f60ad72dfdc103e5736d9d983d60eb0d04980d71e69072824189b94aefb13e80",
+    "kstuff/prosper0gdb/r0gdb.c": "7de1aee3b197af5933c9d468fc1d05544229119defdba42099d78e178eb236c7"
+  }
+}

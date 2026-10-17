@@ -1,0 +1,34 @@
+{
+  "source": "GronedWaffel/ps-neighborhood local-ps5",
+  "license": "GPL-3.0-or-later",
+  "files": [
+    {
+      "name": "host.c",
+      "upstreamSha256": "4d3cc40997f8271b66de4435ca13c1e8d477ac224d78cae75d416e1a9801dc9b"
+    },
+    {
+      "name": "globals.mjs",
+      "upstreamSha256": "a519479c1789f79802ffffe492a63e4da939d43379ddda78d7bee310d310808a"
+    },
+    {
+      "name": "net.mjs",
+      "upstreamSha256": "a22fe3ec9451b095ee235e1129ba44c62c1c306e950f8ef2491a6fafc1000f90"
+    },
+    {
+      "name": "http.mjs",
+      "upstreamSha256": "afe4a8974765a8a3759c2dd8ed3c4b06b47baa4b10e5b818380bc3dfb0a661e9"
+    },
+    {
+      "name": "fs.mjs",
+      "upstreamSha256": "9cb84df46a389398405c68f566a9d7e486da6dae0117b00dc9e84cd117bf56fb"
+    },
+    {
+      "name": "crypto.mjs",
+      "upstreamSha256": "1c0dc96a99d66eee5755bc4c8a8db26aa691a349d6c86c6244e54976d948d9a3"
+    },
+    {
+      "name": "url.mjs",
+      "upstreamSha256": "cbcd46fbcc1e88cc18435b7c4a21ca0f9c66d5e670efcb722ea35f5c9729f8d0"
+    }
+  ]
+}

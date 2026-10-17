@@ -1,0 +1,20 @@
+{
+  "references": [
+    {
+      "source": "https://github.com/n0llptr/Playstation-5-Save-Mounter",
+      "revision": "1a0281ea9794afadc2e2da345ca0b66e5db45bc7",
+      "file": "mounter_payload/main.c",
+      "license": "GPL-3.0",
+      "authors": ["n0llptr", "cow (PFS save filesystem research)", "earthonion (save tooling research)"],
+      "use": "PFS mount/unmount option layout and API signatures; pfsmgr sealed-key ioctl; PS4 companion key and PS5 container key locations. No original-container mounting, network command server, restore, or save creation code is carried over."
+    },
+    {
+      "source": "GronedWaffel PS Neighborhood",
+      "file": "receiver-ps5/saves.h",
+      "license": "GPL-3.0-or-later",
+      "use": "Existing staged-copy workflow, bounded heap ioctl key buffer, temporary save-service authid/capabilities and verified credential restoration."
+    }
+  ],
+  "implementation": "ProsperoMenu isolates each operation in its own helper with durable intent and completion receipts. Installed saves are opened read-only. Exported PAX tar archives contain file hashes and a manifest; they are published only after staged-copy unmount and archive verification. USB selection binds a mounted volume identity. Unknown mount/publication state retains staging instead of replaying.",
+  "hardwareVerified": false
+}
